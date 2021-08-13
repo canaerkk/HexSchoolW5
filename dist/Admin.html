@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Admin</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <aside class="col-3 pt-7 ps-7 pe-8 bg-light vh-100 d-flex flex-column justify-content-start">
+      <h1 class="mb-7"><a href="index.html" class="text-nowrap"><img src="./assets/images/logo-ANSWER.svg" alt="logo"></a></h1>
+      <ul class="nav flex-column">
+        <li class="lh-base">
+          <a class="text-decoration-none text-dark text-nowrap py-3 d-block" href="#"><span class="material-icons align-middle me-4">assessment</span> Dashboard</a>
+        </li>
+        <li class="lh-base">
+          <a class="text-decoration-none text-dark text-nowrap py-3 d-block" href="#"><span class="material-icons align-middle me-4">question_answer</span> Question</a>
+        </li>
+        <li class="lh-base">
+          <a class="text-decoration-none text-dark text-nowrap py-3 d-block" href="#"><span class="material-icons align-middle me-4">assignment</span> Assignment</a>
+        </li>
+        <li class="lh-base">
+          <a class="text-decoration-none text-dark text-nowrap py-3 d-block" href="#"><span class="material-icons align-middle me-4">group</span> Admin</a>
+        </li>
+        <li class="lh-base">
+        </li>
+        <li class="lh-base">
+          <a class="text-decoration-none text-dark text-nowrap py-3 d-block" href="#"><span class="material-icons align-middle me-4">settings</span> Settings</a>
+        </li>
+      </ul>
+      <div class="user-card mt-auto mb-7">
+        <div class="user-card-image">
+          <img src="./assets/images/andychen.jpeg" alt="">
+        </div>
+        <div class="user-card-content">
+          <span class="text-dark">Andy Chen</span>
+          <span><a href="mailto:andy0401@mail.com"  class="text-decoration-none link-secondary">andy0401@mail.com</a></span>
+        </div>
+      </div>
+    </aside>
+    <div class="mainarea col-9 vh-100">
+      
+<div class="container">
+    <div class="row d-flex justify-content-between py-7">
+        <div class="col-6 d-flex">
+            <h2 class="fs-5 fw-bold me-6">Admin</h2>
+            <a href="#" class="text-decoration-none text-dark d-flex fs-6 align-middle">
+                <span class="material-icons text-success me-2">add</span>
+                <span class="fw-bold mr-1 text-gray-900">Add New Admin</span>
+            </a>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+            <a href="#" class="text-decoration-none text-dark"><span class="material-icons me-6">search</span></a>
+            <a href="#" class="text-decoration-none text-dark"><span class="material-icons me-6">notifications_active</span></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID<span class="material-icons text-success fs-7 fw-bold">south</span></th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Verified</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <th class="fw-normal">#1</th>
+                      <td>Emir Wicks</td>
+                      <td>emir.wicks@mail.com</td>
+                      <td>YES</td>
+                      <td>
+                        <div class="d-flex justify-end items-center">
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#adminDetail">
+                            <span class="material-icons">visibility</span>
+                          </button>
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                            <span class="material-icons">edit</span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal">#2</th>
+                      <td>Zaina Goldsmith</td>
+                      <td>zaina.goldsmith@mail.com</td>
+                      <td>YES</td>
+                      <td><div class="d-flex justify-end items-center">
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#adminDetail">
+                            <span class="material-icons">visibility</span>
+                          </button>
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                            <span class="material-icons">edit</span>
+                          </button>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal">#3</th>
+                      <td>Mahima Lopez</td>
+                      <td>Mahima.Lopez@mail.com</td>
+                      <td>YES</td>
+                      <td><div class="d-flex justify-end items-center">
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#adminDetail">
+                            <span class="material-icons">visibility</span>
+                          </button>
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                            <span class="material-icons">edit</span>
+                          </button>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal">#4</th>
+                      <td>Pharrell Murray</td>
+                      <td>Pharrell.Murray@mail.com</td>
+                      <td>YES</td>
+                      <td><div class="d-flex justify-end items-center">
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#adminDetail">
+                            <span class="material-icons">visibility</span>
+                          </button>
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                            <span class="material-icons">edit</span>
+                          </button>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal">#5</th>
+                      <td>Annika Mcbride</td>
+                      <td>Annika.Mcbride@mail.com</td>
+                      <td>YES</td>
+                      <td><div class="d-flex justify-end items-center">
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#adminDetail">
+                            <span class="material-icons">visibility</span>
+                          </button>
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                            <span class="material-icons">edit</span>
+                          </button>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal">#6</th>
+                      <td>Fatimah Clark</td>
+                      <td>fatimah.clark@mail.com</td>
+                      <td>YES</td>
+                      <td><div class="d-flex justify-end items-center">
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#adminDetail">
+                            <span class="material-icons">visibility</span>
+                          </button>
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                            <span class="material-icons">edit</span>
+                          </button>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal">#7</th>
+                      <td>Klaudia Rhodes</td>
+                      <td>klaudia.rhodes@mail.com</td>
+                      <td>YES</td>
+                      <td><div class="d-flex justify-end items-center">
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#adminDetail">
+                            <span class="material-icons">visibility</span>
+                          </button>
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                            <span class="material-icons">edit</span>
+                          </button>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal">#8</th>
+                      <td>Tillie Lucero</td>
+                      <td>Tillie.Lucero@mail.com</td>
+                      <td>YES</td>
+                      <td><div class="d-flex justify-end items-center">
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#adminDetail">
+                            <span class="material-icons">visibility</span>
+                          </button>
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                            <span class="material-icons">edit</span>
+                          </button>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal">#9</th>
+                      <td>Sabrina Stephenson</td>
+                      <td>Sabrina.Stephenson@mail.com</td>
+                      <td>YES</td>
+                      <td><div class="d-flex justify-end items-center">
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#adminDetail">
+                            <span class="material-icons">visibility</span>
+                          </button>
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                            <span class="material-icons">edit</span>
+                          </button>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal">#10</th>
+                      <td>Annie Smith</td>
+                      <td>Annie.Smith@mail.com</td>
+                      <td>YES</td>
+                      <td><div class="d-flex justify-end items-center">
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#adminDetail">
+                            <span class="material-icons">visibility</span>
+                          </button>
+                          <button type="button" class="btn btn-sm text-success-hover" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                            <span class="material-icons">edit</span>
+                          </button>
+                        </div></td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-end">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#"><span class="material-icons fs-6">keyboard_arrow_left</span></a></li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><span class="material-icons fs-6">keyboard_arrow_right</span></a></li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+</div>
+
+    </div>
+  </div>
+</div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
